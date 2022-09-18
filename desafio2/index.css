@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: ' ';
+  width: 100%;
+  height: 495px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #253B51;
+}
+
+.begin {
+  color: #FFFFFF;
+  background: #F67669;
+  height: 120px;
+  border-radius: 20px 20px 0px 0px;
+  padding: 50px;
+}
+
+header h1 {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  color: #FFFFFF;
+
+  width: 750px;
+  text-align: center;
+
+}
+
+.page {
+  margin: auto;
+  width: 750px;
+  min-height: 300px;
+}
+
+header {
+  width: 400px;
+  margin-top: 140px;
+}
+
+.my-svg {
+  margin-bottom: 30px;
+  margin-top: 19px;
+
+}
+
+.my-paragrafo {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #BFD7E4;
+}
+
+form {
+
+  width: 750px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+  background: #FFFFFF;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 392px;
+}
+
+.usuario {
+  display: flex;
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.us {
+  margin-top: 18px;
+}
+
+.inputNome {
+  width: 300px;
+}
+
+fieldset {
+  border: none;
+
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+fieldset legend,
+h2,
+legend {
+
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #253B51;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.mentor {
+  padding-bottom: 32px;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+  font-size: 12px;
+  color: #c1bccc;
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper input {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  width: 100%;
+  height: 56px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #c1bccc;
+}
+
+body,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+.das,
+.ate {
+  width: 140px;
+  margin-top: 34px;
+}
+
+.inputData {
+  margin-right: 32px;
+  width: 300px;
+  margin-top: 34px;
+}
+
+.col-3 {
+  display: flex;
+  gap: 10px;
+}
+
+.borda fieldset,
+h2 {
+  border-bottom: none;
+}
+
+footer .button {
+  margin-top: 63.74px;
+  background: #F67669;
+  border-radius: 8px;
+  width: 100%;
+  height: 51px;
+  border: none;
+
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+footer .button:hover {
+  background: #84061f;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+.teste {
+  margin-bottom: 31px;
+}
+
+.input-wrapper label,
+.input-wrapper checkbox {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+  margin-bottom: 8px;
+}
+
+
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked+label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_501_20)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_501_20'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus+label::before {
+  outline: 2px solid black;
+}
+
+textarea {
+  width: 608px;
+  height: 167px;
+  margin-bottom: 30px;
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #c1bccc;
+}
