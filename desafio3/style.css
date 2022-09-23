@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*responsividade*/
+  font-size: 62.5%;
+  /*fonts*/
+  --ff-paragrafo: 'Palanquin';
+  --ff-title: 'Staatliches';
+
+  /* --hue: 250; */
+  /*header*/
+  --bg-heading: hsl(218, 17%, 62%);
+  --bg-title: hsl(275, 18%, 79%);
+  --color-title: hsla(0, 0%, 100%, 1);
+  /*main*/
+  --bg-body: hsl(233, 100%, 97%);
+  --bg-h2: hsl(312, 91%, 96%);
+  --color-h2: hsl(232, 17%, 35%);
+}
+
+body {
+  background: var(--bg-body);
+}
+
+/* body * {
+  border: 1px solid blue;
+} */
+
+body header svg {
+  width: 21.8rem;
+  /*21.8rem*/
+  height: 13.7rem;
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+  margin: 3.2rem 0;
+}
+
+body header div {
+  margin-top: -2px;
+  /*não faça isso*/
+  padding: .8rem 0 .7rem;
+  background: var(--bg-title);
+}
+
+body header h1 {
+  font-family: var(--ff-title);
+  font-weight: 400;
+  font-size: 4.0rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-title);
+  text-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+body header {
+  height: 27.9rem;
+  background: var(--bg-heading);
+  text-align: center;
+}
+
+body .page {
+  max-width: 40rem;
+  /*22.9 para as imagens*/
+  margin: 0 auto 6rem;
+  padding: 0 3.2rem;
+  /* background-color: aqua; */
+  /* border: 2px solid red; */
+}
+
+body .page div p {
+  padding: 1.5rem 0 6.0rem;
+  padding: auto;
+  font-family: var(--ff-paragrafo);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  color: #23053A;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.card img {
+  transition: all 200ms;
+
+  border-radius: 2.0rem;
+  filter: blur(2px);
+  object-fit: cover;
+  /* se ajustar ao seu contêiner.*/
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
+.card {
+  position: relative;
+}
+
+/* span {
+  width: 11.2rem;
+  height: 3.5rem;
+} */
+
+.card h2 {
+  animation: topdown 700ms 800ms backwards;
+  animation-timing-function: cubic-bezier(0, 1.06, 0.55, 1.24);
+  /*box of h2*/
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+  padding: .1rem 2.3rem;
+
+  background: var(--bg-h2);
+  border-radius: 2.0rem;
+  /*content*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: var(--ff-title);
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  color: var(--color-h2);
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    background-color: hsla(236, 100%, 97%, 0.616);
+  }
+}
+
+main {
+  animation: downtop 700ms 350ms backwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+
+  display: grid;
+  gap: 3.2rem;
+}
+
+/* main {
+  grid-template-areas: 'A''B''C''D';
+}
+
+main div:nth-child(1) {
+  grid-area: A;
+}
+
+main div:nth-child(2) {
+  grid-area: B;
+}
+
+main div:nth-child(3) {
+  grid-area: C;
+}
+
+main div:nth-child(4) {
+  grid-area: D;
+} */
